@@ -45,10 +45,12 @@ const config = {
    * See: https://getindiekit.com/plugins/stores
    */
   "@indiekit/store-github": {
-    user: process.env.GITHUB_USER,
-    repo: process.env.GITHUB_REPO,
+    user: process.env.GITHUB_USERNAME,
+    repo: process.env.GITHUB_REPOSITORY,
     branch: process.env.GITHUB_BRANCH,
   },
 };
 
 export default config;
+
+
