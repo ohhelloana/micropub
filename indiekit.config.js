@@ -16,7 +16,6 @@ const config = {
   plugins: [
     "@indiekit/preset-jekyll",
     "@indiekit/store-github",
-    "@indiekit/syndicator-mastodon",
   ],
 
   /**
@@ -50,19 +49,6 @@ const config = {
     repo: process.env.GITHUB_REPO,
     branch: process.env.GITHUB_BRANCH,
   },
-
-  /**
-   * Mastodon syndicator options
-   *
-   * Multiple syndicators can be added.
-   *
-   * See: https://getindiekit.com/plugins/syndicators
-   */
-  "@indiekit/syndicator-mastodon": {
-    checked: true,
-    url: process.env.MASTODON_URL,
-    user: process.env.MASTODON_USER,
-  }
 };
 
 export default config;
