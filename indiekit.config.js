@@ -28,6 +28,14 @@ const config = {
    */
   publication: {
     me: process.env.PUBLICATION_URL,
+    postTypes: {
+      article: {
+        post: {
+          path: "src/posts/{slug}.md",
+          url: "{slug}"
+        }
+      }
+    }
   },
 
   /**
